@@ -1,0 +1,35 @@
+{
+  "readmeUrl": "https://raw.githubusercontent.com/cveinnt/cveinnt/master/README.md",
+  "title": "About Me | Xudong Guo",
+  "name": "Xudong Guo",
+  "ascii": "a",
+  "social": {
+    "github": "sunny0826",
+    "linkedin": "guoxudong"
+  },
+  "email": "guoxudong.dev@gmail.com",
+  "ps1_hostname": "guest",
+  "ps1_username": "visitor",
+  "repo": "https://github.com/sunny0826/aboutme",
+  "resume_url": "https://guoxudong.io/about/",
+  "colors": {
+   "light": {
+      "background": "#E5E9F0",
+      "foreground": "#2E3440",
+      "yellow": "#5E81AC",
+      "green": "#A3BE8C",
+      "gray": "#88C0D0",
+      "blue": "#EBCB8B",
+      "red": "#BF616A"
+    },
+    "dark": {
+      "background": "#2E3440",
+      "foreground": "#E5E9F0",
+      "yellow": "#5E81AC",
+      "green": "#A3BE8C",
+      "gray": "#88C0D0",
+      "blue": "#EBCB8B",
+      "red": "#BF616A"
+    }
+  }
+}
