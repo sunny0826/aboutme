@@ -82,6 +82,10 @@ export const reddit = async (args: string[]): Promise<string> => {
   return `Searching reddit for ${args.join(' ')}...`;
 };
 
+export const baidu = async (args: string[]): Promise<string> => {
+  return `想要代码写得好，请先关闭百度`;
+};
+
 // Typical linux commands
 export const echo = async (args: string[]): Promise<string> => {
   return args.join(' ');
@@ -129,9 +133,17 @@ export const sudo = async (args?: string[]): Promise<string> => {
   return `Permission denied: with little power comes... no responsibility? `;
 };
 
+// website
+export const website = async (args: string[]): Promise<string> => {
+  window.open(`https://guoxudong.io`);
+
+  return 'Opening guoxudong.io...';
+};
+
 // Banner
 export const banner = (args?: string[]): string => {
-  return `
+  return `                                   My Conquest is the Sea of Stars 💫
+
   ██████  ██    ██  ██████  ██   ██ ██    ██ ██████   ██████  ███    ██  ██████     ██  ██████  
   ██       ██    ██ ██    ██  ██ ██  ██    ██ ██   ██ ██    ██ ████   ██ ██          ██ ██    ██ 
   ██   ███ ██    ██ ██    ██   ███   ██    ██ ██   ██ ██    ██ ██ ██  ██ ██   ███    ██ ██    ██ 
@@ -144,10 +156,20 @@ export const banner = (args?: string[]): string => {
      [command]
    
    Available Commands:
-     repo        Type repo or click <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.repo}" target="_blank">here</a></u> for the Github repository.
-     qr          Display QR code of WeChat Official Accounts
-     contact     Display contact information
-     help        Help about any command
-
+     repo         Type repo or click <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.repo}" target="_blank">here</a></u> for the Github repository.
+     qr           Display QR code of WeChat Official Accounts
+     contact      Display contact information
+     github       Display my GItHub
+     help         Help about any command
+     weather      Print the weather for the specified city
+     website      Open <u><a class="text-light-blue dark:text-dark-blue underline" href="https://guoxudong.io"target="_blank">guoxudong.io</a></u>
+   Search Commands: 
+     google       Searching google for [input]
+     duckduckgo   Searching duckduckgo for [input]
+     bing         Searching bing for [input]
+     baidu        Searching baidu for  [input]
+     reddit       Searching reddit for  [input]
+  
+  Use the "help" command to find more commands.
 `;
 };
